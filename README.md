@@ -1,1 +1,2 @@
-# android-learning
+- [Training](https://developer.android.com/training/index.html)
+- [Guide](https://developer.android.com/guide/index.html)
