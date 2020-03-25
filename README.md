@@ -8,6 +8,7 @@ Android
 ## 开发工具
 
 - [Android Studio](https://developer.android.com/studio/)
+- [环境变量](https://developer.android.com/studio/command-line/variables)
 
 ## 常见问题
 
