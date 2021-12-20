@@ -15,6 +15,15 @@ public class IntentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intent_layout);
 
+		Button way = this.findViewById(R.id.way);
+		way.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(IntentActivity.this, IntentWayActivity.class);
+				IntentActivity.this.startActivity(intent);
+			}
+		});
+
         Button paramsTransfer = this.findViewById(R.id.paramsTransfer);
         paramsTransfer.setOnClickListener(new View.OnClickListener() {
 			@Override

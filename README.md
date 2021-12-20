@@ -1,9 +1,52 @@
-Android
-========
+# Android
 
 - [开发指南](https://developer.android.com/guide/)
 - [开发示例](https://developer.android.com/samples/)
 - [API](https://developer.android.com/reference/)
+
+## 推荐书籍
+
+- [《Android编程权威指南》](https://book.douban.com/subject/25848404/)
+
+  1. https://book.douban.com/subject/25848404/
+  2. https://book.douban.com/subject/25848404/
+  3. https://book.douban.com/subject/27065013/
+  4. https://book.douban.com/subject/35367125/
+
+- [第一行代码：Android（第2版） : Android](https://book.douban.com/subject/26915433/)
+
+  1. https://book.douban.com/subject/25942191/
+  2. https://book.douban.com/subject/26915433/
+  3. https://book.douban.com/subject/26915433/
+
+- 深入理解Android : 卷I
+
+  - https://book.douban.com/subject/6802440/
+  - https://book.douban.com/subject/11542973/
+  - https://book.douban.com/subject/26598458/
+
+- [深入理解Android : Java虚拟机ART](https://book.douban.com/subject/33390277/)
+- [深入理解Android：Wi-Fi、NFC和GPS卷](https://book.douban.com/subject/25863872/)
+- [深入理解Android内核设计思想](https://book.douban.com/subject/27074612/)
+- Android进阶系列
+
+  - [《Android进阶之光》](https://book.douban.com/subject/27080694/)
+  - [《Android进阶解密》](https://book.douban.com/subject/30358046/)
+  - [《Android进阶指北》](https://book.douban.com/subject/35216254/)
+
+- [《Android开发精要》](https://book.douban.com/subject/11530748/)
+- [《Android 源码设计模式解析与实战》](https://book.douban.com/subject/26644935/)
+- [《最强Android书：架构大剖析》](https://book.douban.com/subject/30269276/)
+- [《Android开发艺术探索》](https://book.douban.com/subject/26599538/)
+- [《Android进阶解密》](https://book.douban.com/subject/30358046/)
+- [《Android内核剖析》](https://book.douban.com/subject/6811238/)
+- [《Android系统源代码情景分析》](https://book.douban.com/subject/19986441/)
+
+kotlin
+
+- [《Kotlin编程权威指南》](https://book.douban.com/subject/34453177/)
+- [《Kotlin核心编程》](https://book.douban.com/subject/33419618/)
+- [《Kotlin实战》](https://book.douban.com/subject/27093660/)
 
 ## 开发工具
 

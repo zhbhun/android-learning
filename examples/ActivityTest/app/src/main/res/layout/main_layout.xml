@@ -9,21 +9,6 @@
 		android:layout_height="wrap_content"
 		android:text="Intent" />
 	<Button
-		android:id="@+id/button_1"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Button 1" />
-	<Button
-		android:id="@+id/sencodActivityByExplicit"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Second Activiy By Explicit" />
-	<Button
-		android:id="@+id/sencodActivityBymplicit"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Second Activiy By Implicit" />
-	<Button
 		android:id="@+id/exit"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

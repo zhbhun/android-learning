@@ -18,38 +18,11 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.main_layout);
 
-		Button itentBtn = this.findViewById(R.id.intent);
-		itentBtn.setOnClickListener(new View.OnClickListener() {
+		Button intentBtn = this.findViewById(R.id.intent);
+		intentBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, IntentActivity.class);
-				MainActivity.this.startActivity(intent);
-			}
-		});
-
-		Button button1 = this.findViewById(R.id.button_1);
-		button1.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(MainActivity.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
-			}
-		});
-
-		Button sencodActivityByExplicit = this.findViewById(R.id.sencodActivityByExplicit);
-		sencodActivityByExplicit.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-				MainActivity.this.startActivity(intent);
-			}
-		});
-
-		Button sencodActivityBymplicit = this.findViewById(R.id.sencodActivityBymplicit);
-		sencodActivityBymplicit.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent("com.zhbhun.examples.activitytest.Sencond");
-				intent.addCategory("android.intent.category.Sencond");
 				MainActivity.this.startActivity(intent);
 			}
 		});
