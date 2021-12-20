@@ -268,3 +268,27 @@
     }
     ```
 
+## 生命周期
+
+返回栈：后进先出的 Activity 栈。
+
+状态
+
+- 运行
+- 暂停
+- 停止
+- 销毁
+
+生命周期
+
+![activity_lifecycle.png](./activity_lifecycle.png)
+
+- 初始化：onCreate =》onStart =》onResume
+- 暂停/恢复：onPause =》onResume
+- 后台/前台：onStop =》onRestart =》onStart =》onResume
+- 销毁：onStop =》onDestroy
+
+## 参考文献
+
+- [Android Activity 开发指南](https://developer.android.com/guide/components/activities/intro-activities)
+
