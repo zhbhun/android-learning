@@ -359,6 +359,8 @@
 - 后台/前台：onPause =》onStop =》onRestart =》onStart =》onResume
 - 销毁：onPause =》onStop =》onDestroy
 
+ps：onSaveInstanceState 可以用于异常退出时保存状态。
+
 ## 参考文献
 
 - [Android Activity 开发指南](https://developer.android.com/guide/components/activities/intro-activities)

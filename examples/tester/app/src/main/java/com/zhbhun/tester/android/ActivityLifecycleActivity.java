@@ -1,9 +1,11 @@
 package com.zhbhun.tester.android;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -76,5 +78,12 @@ public class ActivityLifecycleActivity extends AppCompatActivity {
 		super.onDestroy();
 
 		Log.d("lifecycle", "onDestroy");
+	}
+
+	@Override
+	protected void onSaveInstanceState(@NonNull Bundle outState) {
+		super.onSaveInstanceState(outState);
+
+		Log.d("lifecycle", "onSaveInstanceState");
 	}
 }
