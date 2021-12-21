@@ -1,12 +1,83 @@
 # Activity
 
-## 跳转/Intent
+## 注册
+
+创建 Activity =》 创建 Layout =》 注册 Activity
+
+- `MainActivity`
+
+    ```java
+    package com.zhbhun.tester.android;
+
+    import androidx.appcompat.app.AppCompatActivity;
+
+    import android.os.Bundle;
+    import android.view.View;
+
+    public class MainActivity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            this.setContentView(R.layout.main_layout);
+        }
+    }
+
+    ```
+
+- `main_layout.xml`
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World" />
+    </LinearLayout>
+    ```
+
+
+- `AndroidManifest.xml`
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.zhbhun.tester.android">
+
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AndroidTester">
+            <activity
+                android:name=".MainActivity"
+                android:exported="true"
+                android:label="Home">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        </application>
+    </manifest>
+
+    ```
+
+## 导航
 
 - 启动活动
 - 启动服务
 - 发送广播
 
-### 方式
+### 导航方式
 
 - 显式
 - 隐式：
@@ -126,7 +197,7 @@
     }
     ```
 
-### 传参
+### 导航传参
 
 - 发送信息：`intent.putExtra`
 - 接收信息：
@@ -285,8 +356,8 @@
 
 - 初始化：onCreate =》onStart =》onResume
 - 暂停/恢复：onPause =》onResume
-- 后台/前台：onStop =》onRestart =》onStart =》onResume
-- 销毁：onStop =》onDestroy
+- 后台/前台：onPause =》onStop =》onRestart =》onStart =》onResume
+- 销毁：onPause =》onStop =》onDestroy
 
 ## 参考文献
 

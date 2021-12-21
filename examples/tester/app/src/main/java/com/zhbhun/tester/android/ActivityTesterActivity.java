@@ -18,7 +18,7 @@ public class ActivityTesterActivity extends AppCompatActivity {
 		lifecycleBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(ActivityTesterActivity.this, ActivityLifecyleActivity.class);
+				Intent intent = new Intent(ActivityTesterActivity.this, ActivityLifecycleActivity.class);
 				ActivityTesterActivity.this.startActivity(intent);
 			}
 		});
