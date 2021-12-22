@@ -4,13 +4,13 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	<Button
-		android:id="@+id/lifecycle"
+		android:id="@+id/index"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="生命周期" />
+		android:text="index" />
 	<Button
-		android:id="@+id/launchMode"
+		android:id="@+id/singleTask"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="启动模式" />
+		android:text="singleTask" />
 </LinearLayout>

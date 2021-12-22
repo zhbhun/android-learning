@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_launch_mode_layout.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_launch_mode_single_instance.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_launch_mode_single_task_layout.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_launch_mode_single_top_layout.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_launch_mode_standard_layout.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_lifecycle_dialog_layout.xml" value="0.12916666666666668" />
         <entry key="app/src/main/res/layout/activity_lifecycle_normal_layout.xml" value="0.12916666666666668" />
         <entry key="app/src/main/res/layout/activity_lifecyle_layout.xml" value="0.2546875" />

@@ -22,5 +22,14 @@ public class ActivityTesterActivity extends AppCompatActivity {
 				ActivityTesterActivity.this.startActivity(intent);
 			}
 		});
+
+		Button launchMode = this.findViewById(R.id.launchMode);
+		launchMode.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ActivityTesterActivity.this, ActivityLaunchModeActivity.class);
+				ActivityTesterActivity.this.startActivity(intent);
+			}
+		});
 	}
 }

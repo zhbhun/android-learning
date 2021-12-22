@@ -361,6 +361,33 @@
 
 ps：onSaveInstanceState 可以用于异常退出时保存状态。
 
+## 启动模式
+
+- standard：默认的启动模式，每次导航跳转都会新建实例
+
+    ![launchMode_standard.jpg](./launchMode_standard.jpg)
+
+- singleTop：当前活动实例导航跳转到同一活动时，不会重新创建新的活动实例（相等于点了没反应）
+
+    ![launchMode_singleTop.jpg](./launchMode_singleTop.jpg)
+
+- singleTask：如果要导航跳转的活动已经在之前创建过，那么会直接返回到该活动实例，在两个活动实例之间访问的活动实例都会被销毁
+
+    ![launchMode_singleTask.jpg](./launchMode_singleTask.jpg)
+
+- singleInstance：使用独立的导航栈来管理该类的活动实例，通常用于其他 App 唤起应用活动实例（这样可以实现不同 App 访问某个活动时，可以复用同一个活动实例）
+
+    ![launchMode_singleInstance.jpg](./launchMode_singleInstance.jpg)
+
+```xml
+...
+<activity
+    android:name=".XXX"
+    android:launchMode="standard|singleTop|singleTask|singleInstance"
+    android:exported="false" />
+...
+```
+
 ## 参考文献
 
 - [Android Activity 开发指南](https://developer.android.com/guide/components/activities/intro-activities)

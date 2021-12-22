@@ -1,62 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhbhun.tester.android">
+	package="com.zhbhun.tester.android">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidTester">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="Home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/Theme.AndroidTester">
+		<activity
+			android:name=".MainActivity"
+			android:exported="true"
+			android:label="Home">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ActivityTesterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityLifecycleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityLifecycleDialogActivity"
-            android:theme="@android:style/Theme.Dialog"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityLifecycleNormalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IntentActivity"
-            android:exported="false"
-            android:label="Intent" />
-        <activity
-            android:name=".IntentWayActivity"
-            android:exported="false"
-            android:label="跳转方式">
-            <intent-filter>
-                <action android:name="com.zhbhun.tester.android.INTENT_WAY" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".ActivityTesterActivity"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLifecycleActivity"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLifecycleDialogActivity"
+			android:exported="false"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity
+			android:name=".ActivityLifecycleNormalActivity"
+			android:exported="false" />
+		<activity
+			android:name=".IntentActivity"
+			android:exported="false"
+			android:label="Intent" />
+		<activity
+			android:name=".IntentWayActivity"
+			android:exported="false"
+			android:label="跳转方式">
+			<intent-filter>
+				<action android:name="com.zhbhun.tester.android.INTENT_WAY" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.INTENT_WAY" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.INTENT_WAY" />
 
-                <data android:scheme="zhbhun" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".IntentParamsSenderActivity"
-            android:exported="false"
-            android:label="传参发送者" />
-        <activity
-            android:name=".IntendParamsReceiverActivity"
-            android:exported="false"
-            android:label="传参接收者" />
-    </application>
+				<data android:scheme="zhbhun" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".IntentParamsSenderActivity"
+			android:exported="false"
+			android:label="传参发送者" />
+		<activity
+			android:name=".IntendParamsReceiverActivity"
+			android:exported="false"
+			android:label="传参接收者" />
+		<activity
+			android:name=".ActivityLaunchModeActivity"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLaunchModeStandardActivity"
+			android:launchMode="standard"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLaunchModeSingleTopActivity"
+			android:launchMode="singleTop"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLaunchModeSingleTaskActivity"
+			android:launchMode="singleTask"
+			android:exported="false" />
+		<activity
+			android:name=".ActivityLaunchModeSingleInstanceActivity"
+			android:launchMode="singleInstance"
+			android:exported="false" />
+	</application>
 
 </manifest>
