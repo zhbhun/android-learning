@@ -48,6 +48,11 @@ kotlin
 - [《Kotlin核心编程》](https://book.douban.com/subject/33419618/)
 - [《Kotlin实战》](https://book.douban.com/subject/27093660/)
 
+## 推荐教程
+
+- [Android基础入门教程](https://www.runoob.com/w3cnote/android-tutorial-intro.html)
+- [CodePath Android Cliffnotes](https://guides.codepath.com/android/)
+
 ## 开发工具
 
 - [Android Studio](https://developer.android.com/studio/)

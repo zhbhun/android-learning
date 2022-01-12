@@ -62,19 +62,34 @@
 			android:exported="false" />
 		<activity
 			android:name=".ActivityLaunchModeStandardActivity"
-			android:launchMode="standard"
-			android:exported="false" />
+			android:exported="false"
+			android:launchMode="standard" />
 		<activity
 			android:name=".ActivityLaunchModeSingleTopActivity"
-			android:launchMode="singleTop"
-			android:exported="false" />
+			android:exported="false"
+			android:launchMode="singleTop" />
 		<activity
 			android:name=".ActivityLaunchModeSingleTaskActivity"
-			android:launchMode="singleTask"
-			android:exported="false" />
+			android:exported="false"
+			android:launchMode="singleTask" />
 		<activity
 			android:name=".ActivityLaunchModeSingleInstanceActivity"
-			android:launchMode="singleInstance"
+			android:exported="false"
+			android:launchMode="singleInstance" />
+		<activity
+			android:name=".ui.UIActivity"
+			android:exported="false"
+			android:label="UI" />
+		<activity
+			android:name=".ui.view.ViewActivity"
+			android:exported="false"
+			android:label="View" />
+		<activity
+			android:name=".ui.view.BaseViewActivity"
+			android:exported="false"
+			android:label="Base View" />
+		<activity
+			android:name=".ui.view.CustomViewActivity"
 			android:exported="false" />
 	</application>
 

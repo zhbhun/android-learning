@@ -1,0 +1,16 @@
+package com.zhbhun.tester.android.ui.view;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.zhbhun.tester.android.R;
+
+public class BaseViewActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.ui_base_view_layout);
+    }
+}

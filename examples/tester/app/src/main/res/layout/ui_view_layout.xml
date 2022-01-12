@@ -4,23 +4,13 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	<Button
-		android:id="@+id/intent"
+		android:id="@+id/base"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Intent" />
+		android:text="base" />
 	<Button
-		android:id="@+id/activity"
+		android:id="@+id/custom"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Activity" />
-	<Button
-		android:id="@+id/ui"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="UI" />
-	<Button
-		android:id="@+id/exit"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Exit" />
+		android:text="custom" />
 </LinearLayout>

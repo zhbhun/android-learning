@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.zhbhun.tester.android.ui.UIActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 	@Override
@@ -32,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, ActivityTesterActivity.class);
+				MainActivity.this.startActivity(intent);
+			}
+		});
+
+		Button uiBtn = this.findViewById(R.id.ui);
+		uiBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, UIActivity.class);
 				MainActivity.this.startActivity(intent);
 			}
 		});
