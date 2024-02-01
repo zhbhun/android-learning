@@ -50,6 +50,7 @@ kotlin
 
 ## 推荐教程
 
+- [Developer guides](https://developer.android.com/guide)
 - [Android基础入门教程](https://www.runoob.com/w3cnote/android-tutorial-intro.html)
 - [CodePath Android Cliffnotes](https://guides.codepath.com/android/)
 
