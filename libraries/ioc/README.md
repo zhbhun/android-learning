@@ -1,0 +1,3 @@
+- koin
+- Hilt
+- Dagger
