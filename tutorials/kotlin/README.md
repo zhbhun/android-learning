@@ -84,6 +84,15 @@ fun whenAssign(obj: Any): Any {
 class MyClass
 ```
 
+### Infix
+
+- [`to`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/)
+
+    ```
+    val pair1 = 1 to "x"
+    val pair2: Pair<Int, String> = 2 to "y"
+    ```
+
 ## Statement
 
 - 条件
@@ -210,7 +219,121 @@ if (x !in 6..10) {
 
 ### List
 
+```kotlin
+val readonlyUsers: List<Int> = listOf('a', 'b', 'c') // read-only
+val systemUsers: MutableList<Int> = mutableListOf(1, 2, 3)
+val sudoers: List<Int> = systemUsers // read-only
 
+// acccess
+val list = listOf(0, 10, 20)
+println(list.getOrElse(1) { 42 }) // 10
+println(list.getOrElse(10) { 42 }) // 42
+
+// filter
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val positives = numbers.filter { x -> x > 0 }
+val negatives = numbers.filter { it < 0 }
+
+// map
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val doubled = numbers.map { x -> x * 2 }
+val tripled = numbers.map { it * 3 }
+
+// check
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val anyNegative = numbers.any { it < 0 } // true
+val allEven = numbers.all { it % 2 == 0 } // false 
+val allOdd = numbers.none { it % 2 == 0 } // false
+
+// find
+val words = listOf("Lets", "find", "something", "in", "collection", "somehow")
+val first = words.find { it.startsWith("some") }
+val last = words.findLast { it.startsWith("some") }
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val firstNumber = numbers.first()
+val lastNumber = number.last()
+val firstEven = numbers.first { it % 2 == 0 }
+val lastOdd = numbers.last { it % 2 != 0 }
+var firstNumberOrNull = empty.firstOrNull()
+val lastNumberOrNull = number.lastOrNull()
+val firstEvenOrNull = numbers.firstOrNull { it % 2 == 0 }
+val lastOddOrNull = numbers.lastOrNull { it % 2 != 0 }
+
+// count
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val totalCount = numbers.count() // 6
+val evenCount = numbers.count { it % 2 == 0 } // 3
+
+// associateBy, groupBy
+data class Person(val name: String, val city: String, val phone: String)
+val people = listOf(
+    Person("John", "Boston", "+1-888-123456"),
+    Person("Sarah", "Munich", "+49-777-789123"),
+    Person("Svyatoslav", "Saint-Petersburg", "+7-999-456789"),
+    Person("Vasilisa", "Saint-Petersburg", "+7-999-123456")
+)
+val phoneBook = people.associateBy { it.phone } // Map<String, Person>
+val cityBook = people.associateBy(Person::phone, Person::city) // Map<String, String>
+val peopleCities = people.groupBy(Person::city, Person::name) // Map<String, List<Person>>
+val lastPersonCity = people.associateBy(Person::city, Person::name) // Map<String, List<Person>>
+
+// partition
+val numbers = listOf(1, -2, 3, -4, 5, -6)
+val evenOdd = numbers.partition { it % 2 == 0 } // Pair<List<Int>, List<Int>>
+val (positives, negatives) = numbers.partition { it > 0 } // List<Int>
+
+// flat
+val fruitsBag = listOf("apple","orange","banana","grapes")
+val clothesBag = listOf("shirts","pants","jeans")
+val cart = listOf(fruitsBag, clothesBag)
+val flatMapBag = cart.flatMap { it } // List<String> 
+
+// min, max
+val numbers = listOf(1, 2, 3)
+val empty = emptyList<Int>()
+val only = listOf(3)
+println("Numbers: $numbers, min = ${numbers.minOrNull()} max = ${numbers.maxOrNull()}") // 1 3
+println("Empty: $empty, min = ${empty.minOrNull()}, max = ${empty.maxOrNull()}") // null null
+println("Only: $only, min = ${only.minOrNull()}, max = ${only.maxOrNull()}") // 3 3
+
+// sort
+val shuffled = listOf(5, 4, 2, 1, 3, -10)
+val natural = shuffled.sorted() // Sorts it in the natural order.
+val inverted = shuffled.sortedBy { -it } // Sorts it in the inverted natural order
+val descending = shuffled.sortedDescending() // Sorts it in the inverted natural order
+val descendingBy = shuffled.sortedByDescending { abs(it) } // Sorts it in the inverted natural order of items' absolute values
+
+// zip
+val A = listOf("a", "b", "c")
+val B = listOf(1, 2, 3, 4)
+val resultPairs = A zip B // List<Pair<String, Int>>
+val resultReduce = A.zip(B) { a, b -> "$a$b" } // List<String>
+```
+
+### Set
+
+```kotlin
+val readonlyUsers: Set<Int> = setOf('a', 'b', 'c')
+val systemUsers: MutableSet<Int> = mutableSetOf(1, 2, 3)
+val sudoers: Set<Int> = systemUsers // read-only
+```
+
+### Map
+
+```kotlin
+val accounts: MutableMap<Int, Int> = mutableMapOf(1 to 100, 2 to 100, 3 to 100)
+val readonlyAccounts: Map<Int, Int> = accounts // mapOf(1 to 100, 2 to 100, 3 to 100)
+
+// access
+val map = mapOf("key" to 42)
+val value1 = map["key"] // 42
+val value2 = map["key2"] // null
+val value3: Int = map.getValue("key") // 42
+val mapWithDefault = map.withDefault { k -> k.length }
+val value4 = mapWithDefault.getValue("key2") // 4
+map.getOrElse("anotherKey") { 0 } // 0
+map.getValue("anotherKey") // NoSuchElementException
+```
 
 ## Function
 
@@ -385,6 +508,62 @@ ps: 区分 Anonymous 和 Lambda
 	
     - 在匿名函数中，return 语句的行为与常规函数相同，它会从匿名函数中返回值。
 	- 在 lambda 表达式中，return 语句会从包含 lambda 的外部函数返回值，这在处理嵌套代码块时尤为重要。
+
+### Scope
+
+- let: executes the given block of code and returns the result of its last expression.
+
+    ```kotlin
+    val empty = "test".let {
+        customPrint(it)
+        it.isEmpty()
+    }
+    println(" is empty: $empty")
+    ```
+
+- run: executes a code block and returns its result. The difference is that inside run the object is accessed by this.
+
+    ```kotlin
+    fun getNullableLength(ns: String?) {
+        println("for \"$ns\":")
+        ns?.run {
+            println("\tis empty? " + isEmpty())
+            println("\tlength = $length")
+            length
+        }
+    }
+    getNullableLength(null)
+    getNullableLength("")
+    getNullableLength("some string with Kotlin")
+    ```
+
+- with: with is a non-extension function that can access members of its argument concisely.
+
+    ```kotlin
+    with(configuration) {
+        println("$host:$port")
+    }
+    ```
+
+- apply: executes a block of code on an object and returns the object itself.
+
+    ```kotlin
+    val jake = Person()
+    val stringDescription = jake.apply {
+        name = "Jake"
+        age = 30
+        about = "Android developer"
+    }.toString()
+    ```
+
+- also: it executes a given block and returns the object called. Inside the block, the object is referenced by it, so it's easier to pass it as an argument.
+
+    ```kotlin
+    val jake = Person("Jake", 30, "Android developer")
+        .also {
+            writeCreationLog(it)
+        }
+    ```
 
 ## 类
 
