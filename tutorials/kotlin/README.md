@@ -14,9 +14,6 @@ var e: Int
 println(e) // Variable 'e' must be initialized
 ```
 
-## Null
-
-
 ## Type
 
 ### Null
@@ -37,6 +34,14 @@ inferredNonNull = null // compile error
 ### Boolean
 
 ### String
+
+- Template
+
+    ```kotlin
+    val greeting = "Kotliner"
+    println("Hello $greeting")
+    println("Hello ${greeting.uppercase()}")
+    ```
 
 ## Expression
 
@@ -92,6 +97,24 @@ class MyClass
     val pair1 = 1 to "x"
     val pair2: Pair<Int, String> = 2 to "y"
     ```
+
+### Destructuring
+
+```
+val (x, y, z) = arrayOf(5, 10, 15)
+
+val map = mapOf("Alice" to 21, "Bob" to 25)
+for ((name, age) in map) {                                      // 2
+    println("$name is $age years old")          
+}
+
+val (min, max) = findMinMax(listOf(100, 90, 50, 98, 76, 83))
+
+data class User(val username: String, val email: String)
+val user = User("Mary", "mary@somewhere.com")
+// Data class automatically defines the component1() and component2() methods that will be called during destructuring.
+val (username, email) = user
+```
 
 ## Statement
 
@@ -368,6 +391,12 @@ fun printMessageWithPrefix(message: String, prefix: String = "Info") {
 printMessageWithPrefix("Hello")
 ```
 
+### Express Function
+
+```kotlin
+fun makeSound(n: String) = println("I'm The King of Rock 'N' Roll: $n")
+```
+
 ### Infix Functions
 
 具有单个参数的成员函数和扩展可以转换为中缀函数。
@@ -564,6 +593,21 @@ ps: 区分 Anonymous 和 Lambda
             writeCreationLog(it)
         }
     ```
+## Interface
+
+```kotlin
+interface SoundBehavior {
+    fun makeSound()
+}
+
+class ScreamBehavior(val n:String): SoundBehavior {
+    override fun makeSound() = println("${n.uppercase()} !!!")
+}
+
+class RockAndRollBehavior(val n:String): SoundBehavior {
+    override fun makeSound() = println("I'm The King of Rock 'N' Roll: $n")
+}
+```
 
 ## 类
 
@@ -576,6 +620,67 @@ val contact = Contact(1, "mary@gmail.com")
 println(contact.id)
 contact.email = "jane@gmail.com"
 ```
+
+### Properties
+
+```kotlin
+class ClassName {
+    // 属性
+    var propertyName: PropertyType = initialValue
+}
+```
+
+### Method
+
+```kotlin
+class ClassName {
+    // 方法
+    fun methodName(parameters): ReturnType {
+        // 方法体
+    }
+}
+```
+
+### Constructor
+
+- primary
+
+    ```kotlin
+    class Contact(val id: Int, var email: String) // 主构造函数是直接在类名后定义的，通常用于初始化类的属性。
+    ```
+
+- secondary
+
+    ```kotlin
+    class Rectangle(val width: Double, val height: Double) {
+        fun area(): Double {
+            return width * height
+        }
+
+        // 次构造函数
+        constructor(side: Double) : this(side, side) // 次构造函数只接受一个参数 side，并调用主构造函数来创建一个正方形。
+    }
+    ```
+
+- init：在主构造函数被调用时立刻执行，可以用于属性的初始化、参数的验证和执行初始化逻辑等。
+
+    ```kotlin
+    class Person(val name: String, var age: Int) {
+        // init 块
+        init {
+            println("Initializing a new Person instance.")
+            if (age < 0) {
+                throw IllegalArgumentException("Age cannot be negative")
+            }
+        }
+
+        fun displayInfo() {
+            println("Name: $name, Age: $age")
+        }
+    }
+    ```
+
+    ps：可以有多个 init 块，按照它们在类中出现的顺序依次执行。
 
 ### Inheritance
 
@@ -806,18 +911,113 @@ fun main() {
 }
 ```
 
+### Delegation
+
+- Delegation Pattern
+
+    ```kotlin
+    interface SoundBehavior {
+        fun makeSound()
+    }
+
+    class ScreamBehavior(val n:String): SoundBehavior {
+        override fun makeSound() = println("${n.uppercase()} !!!")
+    }
+
+    class RockAndRollBehavior(val n:String): SoundBehavior {
+        override fun makeSound() = println("I'm The King of Rock 'N' Roll: $n")
+    }
+
+    // Tom Araya is the "singer" of Slayer
+    class TomAraya(n:String): SoundBehavior by ScreamBehavior(n)
+
+    // You should know ;)
+    class ElvisPresley(n:String): SoundBehavior by RockAndRollBehavior(n)
+
+    fun main() {
+        val tomAraya = TomAraya("Thrash Metal")
+        tomAraya.makeSound()
+        val elvisPresley = ElvisPresley("Dancin' to the Jailhouse Rock.")
+        elvisPresley.makeSound()
+    }
+    ```
+
+- Delegated Properties
+
+    ```kotlin
+    import kotlin.reflect.KProperty
+
+    class Example {
+        var p: String by Delegate()
+
+        override fun toString() = "Example Class"
+    }
+
+    class Delegate() {
+        operator fun getValue(thisRef: Any?, prop: KProperty<*>): String {
+            return "$thisRef, thank you for delegating '${prop.name}' to me!"
+        }
+
+        operator fun setValue(thisRef: Any?, prop: KProperty<*>, value: String) {
+            println("$value has been assigned to ${prop.name} in $thisRef")
+        }
+    }
+
+    fun main() {
+        val e = Example()
+        println(e.p)
+        e.p = "NEW"
+    }
+    ```
+
+- lazy
+
+    ```kotlin
+    class LazySample {
+        init {
+        println("created!")
+        }
+        
+        val lazyStr: String by lazy {
+            println("computed!")
+            "my lazy"
+        }
+    }
+
+    fun main() {
+        val sample = LazySample()
+        println("lazyStr = ${sample.lazyStr}")
+        println(" = ${sample.lazyStr}")
+    }
+    ```
+
+- blockingLazy
+- observable
+- map
+
+    ```kotlin
+    class User(val map: Map<String, Any?>) {
+        val name: String by map
+        val age: Int     by map
+    }
+    fun main() {
+        val user = User(mapOf("name" to "John Doe", "age"  to 25))
+        println("name = ${user.name}, age = ${user.age}")
+    }
+    ```
+
 ## Generic
 
 - Class
 
     ```kotlin
-    class MutableStack<E>(vararg items: E) {              // 1
+    class MutableStack<E>(vararg items: E) {
 
         private val elements = items.toMutableList()
 
-        fun push(element: E) = elements.add(element)        // 2
+        fun push(element: E) = elements.add(element)
 
-        fun peek(): E = elements.last()                     // 3
+        fun peek(): E = elements.last()
 
         fun pop(): E = elements.removeAt(elements.size - 1)
 
