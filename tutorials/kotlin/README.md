@@ -1,6 +1,7 @@
 - https://kotlinlang.org
 - [Learn Kotlin by Example](https://play.kotlinlang.org/byExample/overview)
-- https://kotlinlang.org/api/latest/jvm/stdlib/
+- [Kotlin STDLib](https://kotlinlang.org/api/latest/jvm/stdlib/)
+- [面向编程人员的 Kotlin 训练营](https://developer.android.com/courses/kotlin-bootcamp/overview?hl=zh-cn)
 
 ## Variables
 
