@@ -1,29 +1,28 @@
-package com.zhbhun.tester.kotlin
+package com.zhbhun.tester.kotlin.ui.layout
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.zhbhun.tester.kotlin.databinding.ActivityMainBinding
-import com.zhbhun.tester.kotlin.ui.UIActivity
+import com.zhbhun.tester.kotlin.ListItem
+import com.zhbhun.tester.kotlin.ListItemAdapter
+import com.zhbhun.tester.kotlin.databinding.LayoutActivityBinding
 
-class MainActivity : AppCompatActivity() {
-
-  private lateinit var binding: ActivityMainBinding
+class LayoutActivity : AppCompatActivity() {
+ private lateinit var binding: LayoutActivityBinding
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    binding = ActivityMainBinding.inflate(layoutInflater)
+    binding = LayoutActivityBinding.inflate(layoutInflater)
     setContentView(binding.root)
 
     val recyclerView = binding.recyclerView
     val itemList = listOf(
-      ListItem("UI", "") {
-        startActivity(Intent(this@MainActivity, UIActivity::class.java))
+      ListItem("LinearLayout", "") {
+        startActivity(Intent(this@LayoutActivity, LinearLayoutActivity::class.java))
       },
-      ListItem("Item 2", "") {},
-      ListItem("Item 3", "") {},
+      ListItem("...", "") {},
     )
     val adapter = ListItemAdapter(itemList)
     recyclerView.adapter = adapter
