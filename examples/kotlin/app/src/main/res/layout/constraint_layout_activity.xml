@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f1f1f1"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_marginBottom="16dp"
+			android:background="#FFEB3B">
+
+			<!-- 示例 1: 基本约束 -->
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Center"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_marginBottom="16dp"
+			android:background="#FFCDD2">
+
+			<!-- 示例 2: 水平链式布局 -->
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Button 1"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toLeftOf="@id/button2"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<Button
+				android:id="@+id/button2"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Button 2"
+				app:layout_constraintLeft_toRightOf="@id/button1"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_marginBottom="16dp"
+			android:background="#BBDEFB">
+
+			<!-- 示例 3: 垂直链式布局 -->
+			<TextView
+				android:id="@+id/textView2_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text 1"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toTopOf="@+id/textView2_2"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/textView2_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text 2"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/textView2_1" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:background="#C8E6C9">
+
+			<!-- 示例 4: 基线对齐 -->
+			<TextView
+				android:id="@+id/textViewBaseline1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text 1"
+				android:textSize="24sp"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:text="Baseline Align"
+				android:textSize="18sp"
+				app:layout_constraintBaseline_toBaselineOf="@id/textViewBaseline1"
+				app:layout_constraintLeft_toRightOf="@id/textViewBaseline1" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:layout_marginBottom="16dp"
+			android:background="#F0F4C3">
+
+			<!-- 示例 5: 圆形布局 -->
+			<View
+				android:id="@+id/centerView"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:background="#FF9800"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/ic_launcher"
+				app:layout_constraintCircle="@id/centerView"
+				app:layout_constraintCircleAngle="45"
+				app:layout_constraintCircleRadius="100dp"
+				tools:ignore="MissingConstraints" />
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/ic_launcher"
+				app:layout_constraintCircle="@id/centerView"
+				app:layout_constraintCircleAngle="135"
+				app:layout_constraintCircleRadius="100dp"
+				tools:ignore="MissingConstraints" />
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/ic_launcher"
+				app:layout_constraintCircle="@id/centerView"
+				app:layout_constraintCircleAngle="225"
+				app:layout_constraintCircleRadius="100dp"
+				tools:ignore="MissingConstraints" />
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/ic_launcher"
+				app:layout_constraintCircle="@id/centerView"
+				app:layout_constraintCircleAngle="315"
+				app:layout_constraintCircleRadius="100dp"
+				tools:ignore="MissingConstraints" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:background="#FFCCBC">
+
+			<!-- 示例 6: 比例布局 -->
+			<ImageView
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_margin="16dp"
+				android:src="@mipmap/ic_launcher"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintDimensionRatio="1:1"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:background="#D1C4E9">
+
+			<!-- 示例 7: 偏移与边距 -->
+			<Button
+				android:id="@+id/button3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="16dp"
+				android:text="Button 3"
+				app:layout_constraintHorizontal_bias="0.2"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintVertical_bias="0.3" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:background="#B2DFDB">
+
+			<!-- 示例 8: 使用 Guideline -->
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/guideline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				app:layout_constraintGuide_percent="0.5" />
+
+			<TextView
+				android:id="@+id/textViewGuideline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Aligned to Guideline"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintStart_toStartOf="@id/guideline"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</LinearLayout>
+</ScrollView>
