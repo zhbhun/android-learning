@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zhbhun.tester.kotlin.databinding.ActivityMainBinding
+import com.zhbhun.tester.kotlin.state.StateActivity
 import com.zhbhun.tester.kotlin.ui.UIActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,9 @@ class MainActivity : AppCompatActivity() {
       ListItem("UI", "") {
         startActivity(Intent(this@MainActivity, UIActivity::class.java))
       },
-      ListItem("Item 2", "") {},
+      ListItem("State", "") {
+        startActivity(Intent(this@MainActivity, StateActivity::class.java))
+      },
       ListItem("Item 3", "") {},
     )
     val adapter = ListItemAdapter(itemList)

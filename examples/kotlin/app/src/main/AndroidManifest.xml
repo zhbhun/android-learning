@@ -35,6 +35,15 @@
 		<activity
 			android:name=".ui.layout.RelativeLayoutActivity"
 			android:exported="true" />
+		<activity
+			android:name=".state.StateActivity"
+			android:exported="true" />
+		<activity
+			android:name=".state.ViewModelActivity"
+			android:exported="true" />
+		<activity
+			android:name=".ui.layout.ConstraintLayoutActivity"
+			android:exported="true" />
 	</application>
 
 </manifest>

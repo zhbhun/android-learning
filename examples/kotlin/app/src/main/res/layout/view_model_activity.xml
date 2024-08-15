@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<data>
+
+		<variable
+			name="counter"
+			type="com.zhbhun.tester.kotlin.state.CounterViewModel" />
+	</data>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#f1f1f1"
+		android:padding="16dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="4dp"
+					android:text="Counter"
+					android:textSize="12dp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#fff"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/counterDecrement"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:text="-" />
+
+					<TextView
+						android:id="@+id/counterValue"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingHorizontal="16dp"
+						android:text="0" />
+
+					<Button
+						android:id="@+id/counterIncrement"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:text="+" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="4dp"
+					android:text="Counter with Initial Value"
+					android:textSize="12dp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#fff"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/counterWithInitialDecrement"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:text="-" />
+
+					<TextView
+						android:id="@+id/counterWithInitialValue"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingHorizontal="16dp"
+						android:text="0" />
+
+					<Button
+						android:id="@+id/counterWithInitialIncrement"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:text="+" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="4dp"
+					android:text="Counter with observer"
+					android:textSize="12dp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#fff"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<Button
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:onClick="@{() -> counter.decrement()}"
+						android:text="-" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingHorizontal="16dp"
+						android:text="@{String.valueOf(counter.count)}" />
+
+					<Button
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:onClick="@{() -> counter.increment()}"
+						android:text="+" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+	</ScrollView>
+</layout>
