@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#f1f1f1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+		android:clipChildren="false"
+        android:showDividers="middle">
+
+        <!-- 基本堆叠视图 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+			android:background="#fff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="堆叠视图"
+                android:textColor="#f00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- 使用 foreground 实现点击效果 -->
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_marginBottom="16dp"
+			android:background="#FF4081"
+			android:foreground="#00f"
+			android:foregroundGravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="前景图层点击效果"
+				android:textColor="@android:color/white"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="居中对齐"
+				android:textColor="@android:color/white"
+				android:textSize="16sp" />
+		</FrameLayout>
+
+		<!-- 使用 layout_gravity 控制子视图对齐 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:background="#3F51B5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:text="顶部左对齐"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_margin="8dp" />
+
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="底部右对齐"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <!-- 使用 measureAllChildren 测量所有子视图 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:measureAllChildren="true"
+            android:background="#FFC107">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="测量所有子视图"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="隐藏的子视图仍然被测量"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <!-- 使用 clipChildren 控制子视图裁剪 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:clipChildren="false"
+            android:background="#009688">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="clipChildren 属性演示"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:translationY="-80dp"
+                android:src="@mipmap/ic_launcher" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -29,6 +29,9 @@
 		<activity
 			android:name=".ui.layout.LinearLayoutActivity"
 			android:exported="true" />
+		<activity
+			android:name=".ui.layout.FrameLayoutActivity"
+			android:exported="true" />
 	</application>
 
 </manifest>

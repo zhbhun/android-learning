@@ -22,6 +22,9 @@ class LayoutActivity : AppCompatActivity() {
       ListItem("LinearLayout", "") {
         startActivity(Intent(this@LayoutActivity, LinearLayoutActivity::class.java))
       },
+      ListItem("FrameLayout", "") {
+        startActivity(Intent(this@LayoutActivity, FrameLayoutActivity::class.java))
+      },
       ListItem("...", "") {},
     )
     val adapter = ListItemAdapter(itemList)
