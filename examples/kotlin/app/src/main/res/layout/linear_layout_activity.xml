@@ -1,85 +1,286 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:background="#f1f1f1">
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal">
+		android:orientation="vertical"
+		android:padding="16dp">
 
-		<TextView
-			android:layout_width="wrap_content"
+		<!-- Horizontal LinearLayout with TextViews -->
+		<LinearLayout
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="@color/material_dynamic_neutral70"
-			android:text="A" />
+			android:layout_marginBottom="16dp"
+			android:background="#fff"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:padding="8dp">
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@color/material_dynamic_neutral80"
-			android:text="B" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
 
-		<TextView
-			android:layout_width="wrap_content"
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with divider -->
+		<LinearLayout
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="@color/material_dynamic_neutral90"
-			android:text="C" />
+			android:layout_marginBottom="16dp"
+			android:divider="@drawable/divider_vertical"
+			android:showDividers="middle"
+			android:background="#fff"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with layout_weight -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:background="#fff"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with start gravity -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:gravity="start"
+			android:background="#fff"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with end gravity -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:gravity="end"
+			android:background="#fff"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with mix gravity -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:baselineAligned="false"
+			android:gravity="end|bottom"
+			android:background="#fff"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="100dp"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<!-- Horizontal LinearLayout with child gravity -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:baselineAligned="false"
+			android:gravity="end|bottom"
+			android:background="#fff"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="100dp"
+				android:background="#f00"
+				android:padding="8dp"
+				android:text="A"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:background="#0f0"
+				android:padding="8dp"
+				android:text="B"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="top"
+				android:background="#00f"
+				android:padding="8dp"
+				android:text="C"
+				android:textColor="#fff"
+				android:textSize="18sp" />
+		</LinearLayout>
 	</LinearLayout>
-
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal">
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="@color/material_dynamic_neutral70"
-			android:text="A" />
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="@color/material_dynamic_neutral80"
-			android:text="B" />
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="@color/material_dynamic_neutral90"
-			android:text="C" />
-	</LinearLayout>
-
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="100dp"
-		android:orientation="horizontal">
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
-			android:layout_weight="1"
-			android:background="@color/material_dynamic_neutral70"
-			android:text="A" />
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
-			android:layout_weight="3"
-			android:background="@color/material_dynamic_neutral80"
-			android:text="B" />
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
-			android:layout_weight="3"
-			android:background="@color/material_dynamic_neutral90"
-			android:text="C" />
-	</LinearLayout>
-
-</LinearLayout>
+</ScrollView>
