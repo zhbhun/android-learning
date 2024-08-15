@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#f1f1f1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="false">
+
+        <!-- 子视图的相对定位 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FF5722">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Left"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottom Right"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centered"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <!-- 相对其他视图的定位 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:background="#3F51B5">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Above Image"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_above="@id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Below Image"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_below="@id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+        <!-- 使用 layout_alignBaseline -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:background="#009688">
+
+            <TextView
+                android:id="@+id/textViewBaseline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text1"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baseline Aligned with Text1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignBaseline="@id/textViewBaseline1"
+                android:layout_toEndOf="@id/textViewBaseline1"
+                android:layout_marginStart="16dp" />
+        </RelativeLayout>
+
+        <!-- 使用 clipChildren 属性 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:clipChildren="false"
+            android:background="#009688">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="clipChildren 属性演示"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:translationY="-50dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+        <!-- 使用 gravity 和 padding -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="#FF4081">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text with Padding"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
