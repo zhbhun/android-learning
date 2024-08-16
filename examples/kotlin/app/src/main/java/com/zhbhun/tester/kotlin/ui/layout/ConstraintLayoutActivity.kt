@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.zhbhun.tester.kotlin.databinding.ConstraintLayoutActivityBinding
 
 class ConstraintLayoutActivity : AppCompatActivity() {
- private lateinit var binding: ConstraintLayoutActivityBinding
+    private lateinit var binding: ConstraintLayoutActivityBinding
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    binding = ConstraintLayoutActivityBinding.inflate(layoutInflater)
-    setContentView(binding.root)
-  }
+        binding = ConstraintLayoutActivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
 }

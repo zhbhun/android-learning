@@ -1,4 +1,4 @@
-package com.zhbhun.tester.kotlin.ui
+package com.zhbhun.tester.kotlin.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,22 +6,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zhbhun.tester.kotlin.ListItem
 import com.zhbhun.tester.kotlin.ListItemAdapter
-import com.zhbhun.tester.kotlin.databinding.UiActivityBinding
-import com.zhbhun.tester.kotlin.ui.layout.LayoutActivity
+import com.zhbhun.tester.kotlin.databinding.ActivityActivityBinding
 
-class UIActivity : AppCompatActivity() {
-    private lateinit var binding: UiActivityBinding
+class ActivityActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = UiActivityBinding.inflate(layoutInflater)
+        binding = ActivityActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val recyclerView = binding.recyclerView
         val itemList = listOf(
-            ListItem("Layout", "") {
-                startActivity(Intent(this@UIActivity, LayoutActivity::class.java))
+            ListItem("LifecycleObserver", "") {
+                startActivity(Intent(this@ActivityActivity, LifecycleObserverActivity::class.java))
             },
             ListItem("...", "") {},
         )
