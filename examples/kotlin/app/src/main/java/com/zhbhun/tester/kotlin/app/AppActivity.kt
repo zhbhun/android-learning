@@ -1,5 +1,6 @@
 package com.zhbhun.tester.kotlin.app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,8 +18,13 @@ class AppActivity : AppCompatActivity() {
 
         val recyclerView = binding.recyclerView
         val itemList = listOf(
-            ListItem("Layout", "") {
-//                startActivity(Intent(this@AppActivity, LayoutActivity::class.java))
+            ListItem("Weather", "") {
+                startActivity(
+                    Intent(
+                        this@AppActivity,
+                        com.zhbhun.tester.kotlin.app.weather.MainActivity::class.java
+                    )
+                )
             },
             ListItem("...", "") {},
         )
