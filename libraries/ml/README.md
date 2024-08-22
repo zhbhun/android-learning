@@ -1,1 +1,2 @@
 - [mlkit](https://github.com/googlesamples/mlkit) - A collection of sample apps to demonstrate how to use Google's ML Kit APIs on Android and iOS
+- [MediaPipe](https://github.com/google-ai-edge/mediapipe)
