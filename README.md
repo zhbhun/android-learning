@@ -19,6 +19,7 @@
   2. https://book.douban.com/subject/26915433/
   3. https://book.douban.com/subject/26915433/
 
+- [深入浅出 Android Jetpack](...)
 - 深入理解Android : 卷I
 
   - https://book.douban.com/subject/6802440/
