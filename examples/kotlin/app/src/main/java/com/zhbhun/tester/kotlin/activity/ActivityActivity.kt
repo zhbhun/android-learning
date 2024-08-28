@@ -2,6 +2,7 @@ package com.zhbhun.tester.kotlin.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zhbhun.tester.kotlin.ListItem
@@ -17,6 +18,9 @@ class ActivityActivity : AppCompatActivity() {
         binding = ActivityActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val recyclerView = binding.recyclerView
         val itemList = listOf(
             ListItem("LifecycleObserver", "") {
@@ -27,5 +31,13 @@ class ActivityActivity : AppCompatActivity() {
         val adapter = ListItemAdapter(itemList)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

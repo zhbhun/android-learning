@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.toolbar.setSubtitle("Hello World!")
+        setSupportActionBar(binding.toolbar)
+
         val recyclerView = binding.recyclerView
         val itemList = listOf(
             ListItem("App", "") {
