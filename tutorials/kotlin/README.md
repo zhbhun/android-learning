@@ -205,7 +205,7 @@ fun main() {
 
 ### Range
 
-```
+```kotlin
 for(i in 0..3) {
     print(i)
 }

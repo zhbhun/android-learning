@@ -28,6 +28,7 @@
 
     - Data Binding
     - Lifecycels
+    - LifeData
     - Navigation
     - Paging
     - Room
