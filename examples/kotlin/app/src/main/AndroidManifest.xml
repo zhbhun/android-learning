@@ -69,6 +69,9 @@
         <activity
             android:name=".ui.message.ToastActivity"
             android:exported="true" />
+        <activity
+            android:name=".ui.dialog.DialogActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
