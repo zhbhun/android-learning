@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.zhbhun.tester.kotlin.activity.ActivityActivity
 import com.zhbhun.tester.kotlin.app.AppActivity
 import com.zhbhun.tester.kotlin.databinding.ActivityMainBinding
+import com.zhbhun.tester.kotlin.resource.ResourceActivity
 import com.zhbhun.tester.kotlin.state.StateActivity
 import com.zhbhun.tester.kotlin.ui.UIActivity
 
@@ -37,7 +38,9 @@ class MainActivity : AppCompatActivity() {
             ListItem("State", "") {
                 startActivity(Intent(this@MainActivity, StateActivity::class.java))
             },
-            ListItem(BuildConfig.CAIYUN_TOKEN, "") {},
+            ListItem("Resource", "") {
+                startActivity(Intent(this@MainActivity, ResourceActivity::class.java))
+            },
         )
         val adapter = ListItemAdapter(itemList)
         recyclerView.adapter = adapter
