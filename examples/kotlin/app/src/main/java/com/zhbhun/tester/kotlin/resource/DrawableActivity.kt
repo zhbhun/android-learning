@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import com.zhbhun.tester.kotlin.R
-import com.zhbhun.tester.kotlin.databinding.ColorStateActivityBinding
 import com.zhbhun.tester.kotlin.databinding.DrawableResourceActivityBinding
 
 class DrawableActivity : AppCompatActivity() {

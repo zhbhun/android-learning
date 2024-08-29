@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 默认状态下的 Drawable -->
+    <item
+        android:id="@+id/state_default"
+        android:drawable="@drawable/button_default"
+        android:state_pressed="false" />
+
+    <!-- 按下状态下的 Drawable -->
+    <item
+        android:id="@+id/state_pressed"
+        android:drawable="@drawable/button_pressed"
+        android:state_pressed="true" />
+
+    <!-- 从默认状态到按下状态的动画 -->
+<!--    <transition-->
+<!--        android:fromId="@id/state_default"-->
+<!--        android:toId="@id/state_pressed">-->
+<!--        <animated-vector-->
+<!--            android:drawable="@drawable/button_press_animation" />-->
+<!--    </transition>-->
+
+<!--    &lt;!&ndash; 从按下状态到默认状态的动画 &ndash;&gt;-->
+<!--    <transition-->
+<!--        android:fromId="@id/state_pressed"-->
+<!--        android:toId="@id/state_default">-->
+<!--        <animated-vector-->
+<!--            android:drawable="@drawable/button_release_animation" />-->
+<!--    </transition>-->
+</animated-selector>

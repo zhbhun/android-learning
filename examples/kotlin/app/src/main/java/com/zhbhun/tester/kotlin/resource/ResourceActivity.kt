@@ -23,11 +23,14 @@ class ResourceActivity : AppCompatActivity() {
 
         val recyclerView = binding.recyclerView
         val itemList = listOf(
-            ListItem("Color State", "") {
-                startActivity(Intent(this@ResourceActivity, ColorStateActivity::class.java))
+            ListItem("ColorStateList", "") {
+                startActivity(Intent(this@ResourceActivity, ColorStateListActivity::class.java))
             },
             ListItem("Drawable", "") {
                 startActivity(Intent(this@ResourceActivity, DrawableActivity::class.java))
+            },
+            ListItem("AnimatedStateListDrawable", "") {
+                startActivity(Intent(this@ResourceActivity, AnimatedStateListDrawableActivity::class.java))
             },
         )
         val adapter = ListItemAdapter(itemList)
