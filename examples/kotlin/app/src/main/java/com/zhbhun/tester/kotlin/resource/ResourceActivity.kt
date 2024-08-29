@@ -26,7 +26,9 @@ class ResourceActivity : AppCompatActivity() {
             ListItem("Color State", "") {
                 startActivity(Intent(this@ResourceActivity, ColorStateActivity::class.java))
             },
-            ListItem("...", "") {},
+            ListItem("Drawable", "") {
+                startActivity(Intent(this@ResourceActivity, DrawableActivity::class.java))
+            },
         )
         val adapter = ListItemAdapter(itemList)
         recyclerView.adapter = adapter

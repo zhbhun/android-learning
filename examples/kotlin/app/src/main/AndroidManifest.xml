@@ -78,6 +78,9 @@
         <activity
             android:name=".resource.ColorStateActivity"
             android:exported="true" />
+        <activity
+            android:name=".resource.DrawableActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
