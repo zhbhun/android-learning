@@ -1,0 +1,1 @@
+- [View binding](https://developer.android.com/topic/libraries/view-binding)

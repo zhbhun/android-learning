@@ -1,0 +1,1 @@
+- [Lifecycles](https://developer.android.com/topic/libraries/architecture/lifecycle)
