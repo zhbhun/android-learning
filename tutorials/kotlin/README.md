@@ -2,6 +2,10 @@
 - [Learn Kotlin by Example](https://play.kotlinlang.org/byExample/overview)
 - [Kotlin STDLib](https://kotlinlang.org/api/latest/jvm/stdlib/)
 - [面向编程人员的 Kotlin 训练营](https://developer.android.com/courses/kotlin-bootcamp/overview?hl=zh-cn)
+- [The Kotlin Primer](https://www.kotlinprimer.com)
+- [Kotlin Tutorial](https://www.w3schools.com/kotlin/index.php)
+- [Kotlin Quick Reference](https://kotlin-quick-reference.com/)
+- https://kotlin-quick-reference.com/
 
 ## Variables
 

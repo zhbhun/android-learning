@@ -1,0 +1,6 @@
+- [Responsive/adaptive design with views](https://developer.android.com/develop/ui/views/layout/responsive-adaptive-design-with-views)
+- [About adaptive layouts](https://developer.android.com/develop/ui/compose/layouts/adaptive)
+- [Large screen app quality](https://developer.android.com/docs/quality-guidelines/large-screen-app-quality)
+- [Get started with large screens](https://developer.android.com/guide/topics/large-screens)
+- [Support multi-window mode](https://developer.android.com/develop/ui/views/layout/support-multi-window-mode)
+- [Build a responsive UI with ConstraintLayout ](https://developer.android.com/develop/ui/views/layout/constraint-layout)
