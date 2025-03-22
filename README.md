@@ -3,6 +3,7 @@
 - [开发指南](https://developer.android.com/guide/)
 - [开发示例](https://developer.android.com/samples/)
 - [API](https://developer.android.com/reference/)
+- [awesome-android-ui](https://github.com/wasabeef/awesome-android-ui) - A curated list of awesome Android UI/UX libraries
 
 ## 推荐书籍
 
