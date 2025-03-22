@@ -9,6 +9,7 @@ import com.zhbhun.tester.kotlin.ListItem
 import com.zhbhun.tester.kotlin.ListItemAdapter
 import com.zhbhun.tester.kotlin.databinding.UiActivityBinding
 import com.zhbhun.tester.kotlin.ui.dialog.DialogActivity
+import com.zhbhun.tester.kotlin.ui.image.ImageActivity
 import com.zhbhun.tester.kotlin.ui.layout.LayoutActivity
 import com.zhbhun.tester.kotlin.ui.message.MessageActivity
 
@@ -31,6 +32,9 @@ class UIActivity : AppCompatActivity() {
             },
             ListItem("Dialog", "") {
                 startActivity(Intent(this@UIActivity, DialogActivity::class.java))
+            },
+            ListItem("Image", "") {
+                startActivity(Intent(this@UIActivity, ImageActivity::class.java))
             },
             ListItem("...", "") {},
         )

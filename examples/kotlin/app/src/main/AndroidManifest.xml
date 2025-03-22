@@ -73,6 +73,9 @@
             android:name=".ui.dialog.DialogActivity"
             android:exported="true" />
         <activity
+            android:name=".ui.image.ImageActivity"
+            android:exported="true" />
+        <activity
             android:name=".resource.ResourceActivity"
             android:exported="true" />
         <activity
