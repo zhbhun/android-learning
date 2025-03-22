@@ -1,1 +1,2 @@
+- [openapk](https://github.com/mobilenetworkltd/openapk) - List of awesome open source apps for Android. Updated weekly!
 - [ytdlnis](https://github.com/deniscerri/ytdlnis) - Android Video/Audio Downloader app using yt-dlp
