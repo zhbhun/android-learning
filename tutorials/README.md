@@ -1,6 +1,7 @@
 # 介绍
 
 - [Developer guides](https://developer.android.com/guide)
+- [Android Views and Widgets Samples Repository](git@github.com:android/views-widgets-samples.git)
 
 ## 系统架构/四层架构
 
