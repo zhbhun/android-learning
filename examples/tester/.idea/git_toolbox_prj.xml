@@ -6,10 +6,10 @@
         <option name="enabled" value="true" />
       </BoolValueOverride>
     </option>
-    <option name="commitMessageValidationConfigOverride">
-      <CommitMessageValidationOverride>
+    <option name="commitMessageValidationEnabledOverride">
+      <BoolValueOverride>
         <option name="enabled" value="true" />
-      </CommitMessageValidationOverride>
+      </BoolValueOverride>
     </option>
   </component>
 </project>

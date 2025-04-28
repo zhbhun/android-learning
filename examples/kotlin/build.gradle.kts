@@ -1,5 +1,21 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.jetbrains.kotlin.android) apply false
+  kotlin("jvm") version "2.1.20"
+}
+
+group = "com.zhbhun.kotlin"
+version = "1.0-SNAPSHOT"
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testImplementation(kotlin("test"))
+}
+
+tasks.test {
+  useJUnitPlatform()
+}
+kotlin {
+  jvmToolchain(17)
 }

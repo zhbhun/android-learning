@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e491520-36a6-4089-9117-316a60e92cb9" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/zhbhun/tester/kotlin/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ListItemAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/MyApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/activity/ActivityActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/activity/LifecycleObserverActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/AppActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/Repository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/dao/PlaceDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/model/DailyResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/model/PlaceResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/model/RealtimeResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/model/Sky.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/model/Weather.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/network/PlaceService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/network/ServiceCreator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/network/WeatherNetwork.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/logic/network/WeatherService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/ui/place/PlaceAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/ui/place/PlaceFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/ui/place/PlaceViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/ui/weather/WeatherActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/app/weather/ui/weather/WeatherViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/resource/AnimatedStateListDrawableActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/resource/ColorStateListActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/resource/DrawableActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/resource/ResourceActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/state/StateActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/state/ViewModelActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/UIActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/dialog/AlertDialogFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/dialog/CustomDialogFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/dialog/DialogActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/image/ImageActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/layout/ConstraintLayoutActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/layout/FrameLayoutActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/layout/LayoutActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/layout/LinearLayoutActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/layout/RelativeLayoutActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/message/MessageActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zhbhun/tester/kotlin/ui/message/ToastActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/selector_text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_clear_day.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_clear_night.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_cloudy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_fog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_partly_cloudy_day.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_partly_cloudy_night.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_place.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_rain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_snow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_bg_wind.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_carwashing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_clear_day.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_clear_night.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_cloudy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_coldrisk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_dressing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_fog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_hail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_heavy_haze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_heavy_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_heavy_snow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_light_haze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_light_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_light_snow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_moderate_haze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_moderate_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_moderate_snow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_partly_cloud_day.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_partly_cloud_night.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_sleet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_storm_rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_thunder_shower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_ic_ultraviolet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/wt_search_bg.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animated_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_press_animation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_pressed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_release_animation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/divider_vertical.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/animated_state_list_drawable_resource_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/color_state_list_resource_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/constraint_layout_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/drawable_resource_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/empty_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/frame_layout_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/image_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/linear_layout_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/message_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/relative_layout_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/resource_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/state_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toast_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ui_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_model_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/viewpaper2_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_forecast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_forecast_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_fragment_place.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_life_index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_main_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_now.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_place_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wt_weather_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/zhbhun/tester/kotlin/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/androidTest/java/com/zhbhun/tester/android/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLaunchModeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLaunchModeSingleInstanceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLaunchModeSingleTaskActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLaunchModeSingleTopActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLaunchModeStandardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLifecycleActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLifecycleDialogActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityLifecycleNormalActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ActivityTesterActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/IntendParamsReceiverActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/IntentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/IntentParamsSenderActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/IntentWayActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ui/UIActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ui/view/BaseViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ui/view/CustomViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ui/view/ViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/java/com/zhbhun/tester/android/ui/view/custom/SimpleDrawingView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_launch_mode_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_launch_mode_single_instance.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_launch_mode_single_task_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_launch_mode_single_top_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_launch_mode_standard_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_lifecycle_dialog_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_lifecycle_normal_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_lifecyle_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/activity_tester_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/intend_params_receiver_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/intent_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/intent_params_sender_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/intent_way_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/main_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/ui_base_view_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/ui_custom_view_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/ui_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/layout/ui_view_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/menu/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/app/src/test/java/com/zhbhun/tester/android/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../tester/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tester/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2wDyYIFjkmixO9YgqeSlL5Hgrfd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build kotlin.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "onboarding.tips.debug.path": "/Users/zhanghuabin/Project/learning/android/examples/kotlin/src/main/kotlin/Main.kt",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhbhun.kotlin.MainKt" />
+      <module name="kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="9e491520-36a6-4089-9117-316a60e92cb9" name="更改" comment="" />
+      <created>1745590485306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745590485306</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>4</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/kotlin$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1745591890808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
